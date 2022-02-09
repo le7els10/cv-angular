@@ -59,6 +59,7 @@ body {
       border-radius: 10px;
       transition: 0.4s;
       font-size: 30px;
+      color: #000;
 
       &:hover {
         box-shadow: -3px -3px 7px $gray, 3px 3px 5px $shadow;
@@ -136,7 +137,11 @@ body {
       .btn-container {
         position: fixed;
         top: 50%;
-        right: 5%;
+        right: 0;
+        background-color: #fff;
+        box-shadow: $box;
+        padding: 5px;
+        border-radius: 5px;
       }
     }
   }

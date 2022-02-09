@@ -245,6 +245,15 @@ export const globalData = {
   cursosData,
   personalData,
   habilitiesData,
+  componentsTitle: {
+    job: 'Desarrollador Front end',
+    profile: 'Perfil',
+    abilities: 'Competencias',
+    education: 'Educación',
+    references: 'Referencias personales',
+    courses: 'Cursos adicionales',
+    personalData: 'Datos personales',
+  },
 };
 
 export const globalDataEn = {
@@ -256,4 +265,13 @@ export const globalDataEn = {
   cursosData: cursosDataEn,
   personalData: personalDataEn,
   habilitiesData,
+  componentsTitle: {
+    job: 'Front end developer',
+    profile: 'Profile',
+    abilities: 'Abilities',
+    education: 'Education',
+    references: 'Personal references',
+    courses: 'Additional courses',
+    personalData: 'Personal information',
+  },
 };

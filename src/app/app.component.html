@@ -4,13 +4,13 @@
     <img src="../assets/images/face.jpeg" alt="my face" class="face" />
     <div class="name-container">
       <h1>Juan David Nuñez Aguilar</h1>
-      <p>Desarrollador Front end</p>
+      <p>{{ globalData.componentsTitle.job }}</p>
     </div>
     <div class="btn-container">
-      <button class="btn-languaje">
+      <button class="btn-languaje" (click)="changeLanguage()">
         <fa-icon [icon]="faLanguage"></fa-icon>
       </button>
-      <button class="btn-download">
+      <button class="btn-download" (click)="print()">
         <fa-icon [icon]="faSave"></fa-icon>
       </button>
     </div>
@@ -18,18 +18,36 @@
 
   <!-- CUERPO -->
   <section>
-    <app-block title="Perfil" [text]="globalData.profileText"></app-block>
-    <app-habilities title="Competencias"></app-habilities>
+    <app-block
+      [title]="globalData.componentsTitle.profile"
+      [text]="globalData.profileText"
+    ></app-block>
+    <app-habilities
+      [title]="globalData.componentsTitle.abilities"
+    ></app-habilities>
     <app-block
       [title]="globalData.jobExperienceTitle"
       [data]="globalData.jobExperienceData"
     ></app-block>
-    <app-block title="Educación" [data]="globalData.educationData"> </app-block>
-    <app-block title="Referencias personales" [data]="globalData.referenceData">
+    <app-block
+      [title]="globalData.componentsTitle.education"
+      [data]="globalData.educationData"
+    >
     </app-block>
-    <app-block title="Cursos adicionales" [data]="globalData.cursosData">
+    <app-block
+      [title]="globalData.componentsTitle.references"
+      [data]="globalData.referenceData"
+    >
     </app-block>
-    <app-block title="Datos personales" [data]="globalData.personalData">
+    <app-block
+      [title]="globalData.componentsTitle.courses"
+      [data]="globalData.cursosData"
+    >
+    </app-block>
+    <app-block
+      [title]="globalData.componentsTitle.personalData"
+      [data]="globalData.personalData"
+    >
     </app-block>
   </section>
 </div>

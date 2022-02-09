@@ -14,4 +14,13 @@ export class AppComponent {
   isSpanish: boolean = true;
 
   globalData = this.isSpanish ? globalData : globalDataEn;
+
+  print = () => {
+    window.print();
+  };
+
+  changeLanguage = () => {
+    this.isSpanish = !this.isSpanish;
+    this.globalData = this.isSpanish ? globalData : globalDataEn;
+  };
 }
