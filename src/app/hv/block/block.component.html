@@ -1,0 +1,15 @@
+<div class="block-container">
+  <h2>{{ title }}</h2>
+  <p *ngIf="text">
+    {{ text }}
+  </p>
+  <div *ngIf="data">
+    <div *ngFor="let item of data">
+      <app-spill
+        [title]="item.title"
+        [description]="item.description"
+        [type]="item.type"
+      ></app-spill>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="block-container">
+  <h2>{{ title }}</h2>
+  <div class="habilities-container">
+    <div *ngFor="let item of habilities">
+      <app-progress [title]="item.title" [value]="item.value"></app-progress>
+    </div>
+  </div>
+</div>
